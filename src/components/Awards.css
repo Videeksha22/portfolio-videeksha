@@ -1,0 +1,133 @@
+.awards-section {
+  padding-top: 50px;
+}
+
+.journey-block {
+  margin-bottom: 3rem;
+}
+
+.mt-5 {
+  margin-top: 4rem;
+}
+
+.text-left {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.text-left::after {
+  content: none;
+}
+
+.text-left span {
+  display: inline-flex;
+  align-items: center;
+  color: var(--accent-color);
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.list-item {
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  transition: var(--transition);
+}
+
+.glass-hover:hover {
+  background: var(--card-hover-bg);
+  border-color: rgba(0, 242, 254, 0.2);
+  transform: translateX(10px);
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.item-header h4 {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.item-date {
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.item-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.list-item p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.external-link {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  transition: var(--transition);
+}
+
+.external-link:hover {
+  color: var(--accent-color);
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.cert-card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cert-card h4 {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.cert-card p {
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .glass-hover:hover {
+    transform: translateY(-5px);
+  }
+}
