@@ -1,12 +1,18 @@
 .navbar {
   position: fixed;
   top: 0;
-  width: 100%;
-  height: 80px;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  max-width: 100%;
+  height: 64px;
   display: flex;
   align-items: center;
-  z-index: 999;
+  z-index: 9999;
   transition: var(--transition);
+  overflow: hidden;
+  flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 .navbar.scrolled {
@@ -113,19 +119,15 @@
   left: 0;
   right: 0;
   bottom: 0;
-  width: 100%;
-  height: 100%;
-  height: 100dvh;
-  /* use dynamic viewport height if supported */
   background-color: var(--bg-color);
   /* Matches light/dark mode */
-  z-index: 1000;
+  z-index: 10000;
   display: flex;
   flex-direction: column;
 }
 
 .mobile-menu-header {
-  height: 80px;
+  height: 64px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -150,7 +152,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem; /* Generous spacing */
+  gap: 2rem;
+  /* Generous spacing */
   overflow-y: auto;
   padding-bottom: 2rem;
 }
